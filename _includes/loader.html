@@ -1,0 +1,10 @@
+<div class="loader-wrapper"></div>
+
+<!-- Loader -->
+<script>
+  $(window).on('load', function () {
+    $('.loader-wrapper').fadeOut(1200, 'swing');
+    $('body').css('overflow', 'visible');
+    $('body').css('z-index', '-100');
+  });
+</script>

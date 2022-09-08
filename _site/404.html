@@ -1,8 +1,10 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }}</title>
+  <title>Page Not Found</title>
   <script src="/assets//js/jquery.js"></script>
   <script src="/assets/js/bootstrap.js"></script>
   <script src="/assets/js/ScrollReveal.js"></script>
@@ -20,3 +22,18 @@
     content="Hello, my name is Arnav. This website is created so that you can get to know me better, check out the projects im working on, how to contact me etc.."
   />
 </head>
+
+  <body>
+    <div class="loader-wrapper"></div>
+
+<!-- Loader -->
+<script>
+  $(window).on('load', function () {
+    $('.loader-wrapper').fadeOut(1200, 'swing');
+    $('body').css('overflow', 'visible');
+    $('body').css('z-index', '-100');
+  });
+</script>
+  
+  </body>
+</html>
